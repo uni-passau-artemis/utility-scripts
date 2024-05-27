@@ -1,0 +1,79 @@
+# SPDX-FileCopyrightText: 2024 Artemis UniPassau Utility Scripts Contributors
+#
+# SPDX-License-Identifier: EUPL-1.2
+
+[tool.poetry]
+name = "utility-scripts"
+version = "0.1.0"
+description = ""
+authors = ["Benedikt Fein <fein@fim.uni-passau.de>"]
+license = "EUPL-1.2"
+readme = "Readme.adoc"
+packages = [
+    { include = "utility_scripts", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4"
+python-gitlab = "4.5.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "~24.4.0"
+isort = "~5.13.0"
+mypy = "~1.10.0"
+reuse = "~3.0.0"
+ruff = "~0.4.0"
+
+
+[tool.poetry.scripts]
+fix-webhook-url = "utility_scripts.fix_webhook_url:main"
+
+
+[tool.black]
+line-length = 88
+target_version = ["py311"]
+include = '\.pyi?$'
+
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+indent = "    "
+
+
+[tool.ruff]
+line-length = 88
+output-format = "full"
+exclude = [
+    "docs",
+    ".venv",
+    "venv",
+    ".mypy_cache",
+    ".pytest_cache",
+]
+target-version = "py311"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+ignore_errors = false
+ignore_missing_imports = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

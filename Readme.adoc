@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2024 Artemis UniPassau Utility Scripts Contributors
+//
+// SPDX-License-Identifier: EUPL-1.2
+
 = Readme
 :icons: font
 
@@ -5,6 +9,9 @@
 --
 Utility scripts used to automate some tasks and/or apply necessary fixes.
 --
+
+
+Python dependencies are managed using link:https://python-poetry.org/[Poetry].
 
 
 == Licence
