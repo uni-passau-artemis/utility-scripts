@@ -474,13 +474,13 @@ chardet = "*"
 
 [[package]]
 name = "python-gitlab"
-version = "4.12.2"
+version = "4.13.0"
 description = "A python wrapper for the GitLab API"
 optional = false
 python-versions = ">=3.8.0"
 files = [
-    {file = "python_gitlab-4.12.2-py3-none-any.whl", hash = "sha256:c4476372112f920c37555e5e2b02d7092220cf4a4cb9f37dfdb35c569e89415a"},
-    {file = "python_gitlab-4.12.2.tar.gz", hash = "sha256:8c140a2603ad8eff7fcab6f3faabf5fc8baaba8def125eb309a32d6aa3a23a56"},
+    {file = "python_gitlab-4.13.0-py3-none-any.whl", hash = "sha256:8299a054fb571da16e1a8c1868fff01f34ac41ea1410c713a4647b3bbb2aa279"},
+    {file = "python_gitlab-4.13.0.tar.gz", hash = "sha256:576bfb0901faca0c6b2d1ff2592e02944a6ec3e086c3129fb43c2a0df56a1c67"},
 ]
 
 [package.dependencies]
@@ -615,4 +615,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<4"
-content-hash = "ac1a1ee0982084252d969364ce563bc67606b76290f0bf33f468c2e015bdf6ca"
+content-hash = "58a86f62349600a68c1c6ed172d2250acd12033a3316e90685228f913ba58398"
