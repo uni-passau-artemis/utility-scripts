@@ -535,19 +535,20 @@ requests = ">=2.0.1,<3.0.0"
 
 [[package]]
 name = "reuse"
-version = "4.0.3"
+version = "5.0.0"
 description = "reuse is a tool for compliance with the REUSE recommendations."
 optional = false
-python-versions = "<4.0,>=3.8"
+python-versions = "<4.0,>=3.9"
 files = [
-    {file = "reuse-4.0.3-cp311-cp311-manylinux_2_36_x86_64.whl", hash = "sha256:b33e26ec1d105cfcfc2e904d103faec0d758994278feb95a4f4290a864562243"},
-    {file = "reuse-4.0.3.tar.gz", hash = "sha256:4f2c3e1213ec644e5febc50d8322d18982e4e1102af8a51d9493bfc2164a0eac"},
+    {file = "reuse-5.0.0-cp313-cp313-manylinux_2_40_x86_64.whl", hash = "sha256:3e4a9495df6f63c7f800e280516bdc3a9e9b57eff0060e6730a2c7e0141eabcc"},
+    {file = "reuse-5.0.0.tar.gz", hash = "sha256:7fd7d11633ab22ba358f23c8e7bd567eec6fd379ce751a4587b07ee5552ff316"},
 ]
 
 [package.dependencies]
 attrs = ">=21.3"
 binaryornot = ">=0.4.4"
 "boolean.py" = ">=3.8"
+click = ">=8.0"
 Jinja2 = ">=3.0.0"
 license-expression = ">=1.0"
 python-debian = ">=0.1.34,<0.1.45 || >0.1.45,<0.1.46 || >0.1.46,<0.1.47 || >0.1.47"
@@ -621,4 +622,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<4"
-content-hash = "1cd1bc67e567f07ef35c6a46430ca87d90ff9906545b8c6ba1f4459116f0cdcf"
+content-hash = "47b6c36956642420049b9813ecb0bebabde5cb86dda34eeeba9b57fde006fb1e"
