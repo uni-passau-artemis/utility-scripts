@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11", "3.12"]
+        python-version: ["3.11", "3.12", "3.13"]
         poetry-version: ["latest"]
         os: ["ubuntu-latest"]
     runs-on: ${{ matrix.os }}
@@ -41,7 +41,7 @@ jobs:
         run: poetry run mypy src
 
       - name: General linting with ruff
-        run: poetry run ruff src
+        run: poetry run ruff check src
 
       - name: Check reuse
         run: poetry run reuse lint
