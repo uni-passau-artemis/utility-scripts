@@ -15,7 +15,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4"
-python-gitlab = "5.1.0"
+python-gitlab = "5.2.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "~24.10.0"
