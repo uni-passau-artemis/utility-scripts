@@ -20,7 +20,7 @@ python-gitlab = "5.2.0"
 [tool.poetry.group.dev.dependencies]
 black = "~24.10.0"
 isort = "~5.13.0"
-mypy = "~1.13.0"
+mypy = "~1.14.0"
 reuse = "~5.0.0"
 ruff = "~0.8.0"
 
