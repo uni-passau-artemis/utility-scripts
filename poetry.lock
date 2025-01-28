@@ -486,13 +486,13 @@ chardet = "*"
 
 [[package]]
 name = "python-gitlab"
-version = "5.3.1"
+version = "5.4.0"
 description = "The python wrapper for the GitLab REST and GraphQL APIs."
 optional = false
 python-versions = ">=3.9.0"
 files = [
-    {file = "python_gitlab-5.3.1-py3-none-any.whl", hash = "sha256:57e8705ccd04617d6d199494487f4ea26f76cb9ac4ebab2490909cc464ea5e8e"},
-    {file = "python_gitlab-5.3.1.tar.gz", hash = "sha256:caabcb500210f4f59ef9f8feec4f99e821d652a55c72ec9f5bf820f45fc17298"},
+    {file = "python_gitlab-5.4.0-py3-none-any.whl", hash = "sha256:0ad7358cfd6c06efc7f7daec48bbc50f7ee032a0b34cbcaedb07352b0ad53f9a"},
+    {file = "python_gitlab-5.4.0.tar.gz", hash = "sha256:12eb217d49bc901711321c708248c35b4b207b8157426427ab9fadc5dc0b5b77"},
 ]
 
 [package.dependencies]
@@ -629,4 +629,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<4"
-content-hash = "65c0192e6a20ce98d0c4cdf72b86cc0346af748527a7361ae2ed49899b402727"
+content-hash = "6390b394d9d774e00fc9d4a043215843b49bff29d2015225acc4da892157def4"
