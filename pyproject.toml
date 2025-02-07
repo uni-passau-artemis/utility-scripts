@@ -18,7 +18,7 @@ python = ">=3.11,<4"
 python-gitlab = "5.6.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "~24.10.0"
+black = "~25.1.0"
 isort = "~6.0.0"
 mypy = "~1.15.0"
 reuse = "~5.0.0"
