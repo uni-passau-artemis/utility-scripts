@@ -4,12 +4,12 @@
 
 .PHONY: format
 format:
-	poetry run black src/
+	poetry run ruff format src/
 	poetry run isort src/
 
 .PHONY: lint
 lint:
-	poetry run black --check src/
+	poetry run ruff format --check --diff src/
 	poetry run isort --check src/
 	poetry run mypy src/
 	poetry run ruff check src/

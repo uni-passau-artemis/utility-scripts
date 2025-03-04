@@ -17,6 +17,7 @@ our case.
 
 This script updates the webhook-URL for all repositories in GitLab.
 """
+
 import argparse
 import logging
 import re

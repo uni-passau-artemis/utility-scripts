@@ -11,37 +11,31 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.11", "3.12", "3.13"]
-        poetry-version: ["latest"]
         os: ["ubuntu-latest"]
     runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Setup Poetry
-        uses: abatilo/actions-poetry@v4.0.0
-        with:
-          poetry-version: ${{ matrix.poetry-version }}
-
       - name: Install dependencies
-        run: poetry install
+        run: uv sync --all-extras --dev
 
       - name: Check imports with isort
-        run: poetry run isort --check-only src --profile black
+        run: uv run isort --check-only src --profile black
 
-      - name: Check formatting with black
-        run: poetry run black --diff --check src
+      - name: Check formatting
+        run: uv run ruff format --diff --check src
 
       - name: Check typing with mypy
-        run: poetry run mypy src
+        run: uv run mypy src
 
       - name: General linting with ruff
-        run: poetry run ruff check src
+        run: uv run ruff check src
 
       - name: Check reuse
-        run: poetry run reuse lint
+        run: uv run reuse lint
