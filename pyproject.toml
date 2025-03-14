@@ -17,6 +17,7 @@ readme = "Readme.md"
 requires-python = ">=3.11"
 dependencies = [
     "python-gitlab>=5.6.0",
+    "python-jenkins>=1.8.2",
     "requests>=2.32.3",
 ]
 
@@ -32,8 +33,9 @@ dev = [
 
 
 [project.scripts]
-fix-webhook-url = "utility_scripts.fix_webhook_url:main"
 create-guest-users = "utility_scripts.create_guest_users:main"
+fix-webhook-url = "utility_scripts.fix_webhook_url:main"
+jenkins-update-artemis-8-urls = "utility_scripts.jenkins_update_artemis_8_urls:main"
 
 
 [tool.isort]
