@@ -24,6 +24,7 @@ dependencies = [
 dev = [
     "isort>=6.0.0",
     "mypy>=1.15.0",
+    "pre-commit>=4.1.0",
     "reuse>=5.0.0",
     "ruff>=0.10.0",
     "types-requests>=2.32.0.20250306",
