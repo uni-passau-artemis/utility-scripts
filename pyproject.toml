@@ -36,6 +36,7 @@ dev = [
 create-guest-users = "utility_scripts.create_guest_users:main"
 fix-webhook-url = "utility_scripts.fix_webhook_url:main"
 jenkins-update-artemis-8-urls = "utility_scripts.jenkins_update_artemis_8_urls:main"
+print-assessment = "utility_scripts.print_assessment:main"
 
 
 [tool.isort]
